@@ -7,6 +7,9 @@ html(lang="en")
         link(rel="shortcut icon" href="/favicon.ico" type="image/x-icon")
         link(rel="icon" href="/favicon.ico" type="image/x-icon")
         link(rel="stylesheet" href="css/style.min.css")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet")
         title Beauty
     body
         header.header
@@ -49,3 +52,76 @@ html(lang="en")
                                     a.services__link(href='#') Массаж
                                 li.services__item
                                     a.services__link(href='#') Мебель
+        main
+            section.sale.mb-80
+                .page-width 
+                    .sale__wrapper
+                        .sale__offer.offer.mw-360
+                            .offer__title_h1.mb-50 Супер кресло
+                            .offer__description.mb-50 Текст акции всегда отражает суть, а не просто болтовню, поэтому внимательнее
+                            .button.button_type-2 Подробнее
+                        .sale__item-for-sale
+                            img(src="./img/super_chair.png" alt="chair").sale__item-for-sale-img
+            section.goods.mb-100
+                .page-width 
+                    .goods__wrapper
+                        h2.goods__title.mb-40 Специальные предложения
+                        .goods__cards-wrapper
+                            .goods__card.card 
+                                img(src="./img/stub.png" alt="stub chair").card__img 
+                                .card__title Парикмахерское кресло «Норм» гидравлическое
+                                .card__price 9 900 ₽
+                                .button.button_type-3 Купить
+                            .goods__card.card 
+                                img(src="./img/stub.png" alt="stub chair").card__img 
+                                .card__title Парикмахерское кресло «Норм» гидравлическое
+                                .card__price 9 900 ₽
+                                .button.button_type-3 Купить
+                            .goods__card.card 
+                                img(src="./img/stub.png" alt="stub chair").card__img 
+                                .card__title Парикмахерское кресло «Норм» гидравлическое
+                                .card__price 9 900 ₽
+                                .button.button_type-3 Купить
+                            .goods__card.card 
+                                img(src="./img/stub.png" alt="stub chair").card__img 
+                                .card__title Парикмахерское кресло «Норм» гидравлическое
+                                .card__price 9 900 ₽
+                                .button.button_type-3 Купить
+            section.info.mb-123
+                .page-width 
+                    .info__wrapper 
+                        .info-block
+                            .offer
+                                h3.offer__title_h3.mw-250.mb-25 Получайте бонусы и подарки
+                                p.offer__description.mw-230.mb-25 Каждый месяц разыгрываем 10 000 рублей для наших клиентов
+                                input(type="email" name="email" placeholder="Введите e-mail").input
+                            .info-block__img.info-block__img_subscribe
+                        .info-block                   
+                            .offer
+                                h3.offer__title_h3.mw-250.mb-25 Заходите к нам
+                                p.offer__description.mw-141.mb-25 Более 300 магазинов по всей России
+                                .button.button_type-4 Карта магазинов
+                            .info-block__img.info-block__img_our-shops
+        footer.footer
+            .footer__first-line
+                .page-width
+                    .footer__first-line-wrapper
+                        .social-media
+                            .social-media__item-wrapper
+                                .social-media__item_youtube.social-media__item
+                            .social-media__item-wrapper
+                                .social-media__item_vk.social-media__item
+                            .social-media__item-wrapper
+                                .social-media__item_facebook.social-media__item
+                            .social-media__item-wrapper
+                                .social-media__item_instagram.social-media__item
+                        p.footer__address 198555, Невский пр. 140, офис 140
+                        .phone
+                            span.phone__number 8 (812) 123-45-67
+                        .button.button_type-1 Обратный звонок
+            .footer__second-line
+                .page-width
+                    .footer__second-line-wrapper
+                        p Лучший магазин (с) 2019 Все права защищены. Интернет-магазин оборудования для салонов красоты
+                        a(href="") Политика конфиденциальности
+

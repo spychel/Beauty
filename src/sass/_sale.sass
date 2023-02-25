@@ -1,0 +1,52 @@
+.sale
+    background-color: $accent
+    overflow: hidden
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__offer
+        align-self: center
+    &__item-for-sale
+        position: relative
+        &-img
+            position: relative
+            z-index: 1
+        &::after
+            content: ""
+            height: 677px
+            width: 677px
+            border-radius: 50%
+            background: rgba(#FFFFFF, .4)
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+        &::before
+            content: ""
+            height: 859px
+            width: 859px
+            border-radius: 50%
+            background: rgba(#FFFFFF, .3)
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+
+.offer
+    display: flex
+    flex-direction: column
+    &__title_h1
+        color: #FFFFFF
+        font-size: 4.8rem
+        font-weight: 700
+        line-height: 5.7rem
+    &__title_h3
+        color: #FFFFFF
+        font-size: 1.8rem
+        font-weight: 700
+        line-height: 2.1rem
+    &__description
+        color: #FFFFFF
+        font-size: 1.4rem
+        font-weight: 400
+        line-height: 2rem
