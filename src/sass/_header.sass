@@ -1,0 +1,101 @@
+.header
+    &__wrapper
+    &__top-line
+    &__second-line
+
+.top-line
+    background: #E5E5E5
+    text-align: center
+    padding: 1.6rem 0
+    &__list
+        list-style: none
+    &__item
+        display: inline-block
+        transition: all .2s
+        &:not(:last-child)
+            margin-right: 3rem
+        &:hover
+            transform: translateY(-.2rem)
+    &__link
+        &, &:visited, &:active
+            color: $dark
+            text-decoration: none
+            font-size: 1.4rem
+
+.second-line
+    background: #FFFFFF
+    &__top-block-wrapper
+        padding: 2rem 0
+        display: grid
+        grid-template-columns: minmax(min-content, auto) min-content min-content
+        column-gap: 4rem
+    &__logo
+    &__phone
+        display: flex
+        align-items: center
+    &__callback
+        display: flex
+        align-items: center
+    &__services
+        text-align: center
+        grid-column: 1 / -1
+        grid-row: 2 / 3
+
+.logo
+    display: flex
+    align-items: center
+    gap: 2rem
+    &__img
+        width: 8rem
+        height: 8rem
+        background: url(../img/logo.svg) center / cover no-repeat
+    &__title
+        font-family: 'Roboto'
+        font-style: normal
+        font-weight: 700
+        font-size: 36px
+        line-height: 42px
+        letter-spacing: 0.1em
+        color: $accent
+
+.services
+    border-top: 1px solid $gray
+    padding: 3rem 0
+    &__list
+        list-style: none
+    &__item
+        display: inline-block
+        transition: all .2s
+        &:not(:last-child)
+            margin-right: 4rem
+        &:hover
+            transform: translateY(-.2rem)
+    &__link
+        &, &:visited, &:active
+            color: #000000
+            text-decoration: none
+            font-size: 1.6rem
+
+.phone
+    &__number
+        font-size: 1.6rem
+        white-space: nowrap
+
+.button
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+
+.button_type-1
+    width: 17rem
+    height: 4rem
+    background: #FFFFFF
+    border: 0.1rem solid $accent
+    border-radius: 4rem
+    font-size: 1.4rem
+    transition: all 0.4s
+    &:hover
+        border-color: white
+        background: $accent
+        color: white
