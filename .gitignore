@@ -1,5 +1,4 @@
 node_modules
 dist
-src/index.html
 csscomb.json
-index.pug
+src/index.pug
