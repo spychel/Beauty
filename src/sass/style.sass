@@ -1,25 +1,45 @@
-@import "variables.sass"
-@import "utilities.sass"
-@import "header.sass"
-@import "sale.sass"
-@import "goods.sass"
-@import "info.sass"
-@import "footer.sass"
-    
+@import 'helpers/_variables'
+@import 'helpers/_utilities'
+@import 'helpers/_mixins'
+@import 'layout/_header'
+@import 'layout/_sale'
+@import 'layout/_goods'
+@import 'layout/_info'
+@import 'layout/_footer'
+@import 'components/_button'
+@import 'components/_input'
+@import 'components/_logo'
+@import 'components/_phone'
+@import 'components/_offer'
+
 *
+    box-sizing: border-box
     margin: 0
     padding: 0
-    box-sizing: border-box
-    text-decoration: none
     list-style: none
+    text-decoration: none
 
 html
     font-size: 62.5%
+    @include respond(tablet)
+        font-size: 56.25%
+    @include respond(tablet-s)
+        font-size: 50%
+    @include respond(mobile-l)
+        font-size: 56.25%
+    @include respond(big-screen)
+        font-size: 75%
+
 body
+    background-color: $gray
     font-family: 'Roboto'
     font-weight: 400
-    background-color: $gray
+
 .page-width
-    max-width: 111rem
     width: 100%
+    max-width: 111rem
     margin: 0 auto
+    @include respond(laptop-m)
+        padding: 0 2rem
+    @include respond(mobile-m)
+        padding: 0 1rem

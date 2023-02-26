@@ -1,0 +1,40 @@
+.sale
+    overflow: hidden
+    background-color: $accent
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        @include respond(mobile-l)
+            flex-wrap: wrap-reverse
+            justify-content: center
+            gap: 5rem
+            padding-bottom: 3rem
+    &__offer
+        align-self: center
+    &__item-for-sale
+        position: relative
+        &-img
+            position: relative
+            z-index: 1
+            width: 42vw
+            max-width: 58.4rem
+        &::after
+            position: absolute
+            top: 50%
+            left: 50%
+            width: 116%
+            height: 116%
+            content: ''
+            transform: translate(-50%, -50%)
+            border-radius: 50%
+            background: rgba(#FFFFFF, .4)
+        &::before
+            position: absolute
+            top: 50%
+            left: 50%
+            width: 147%
+            height: 147%
+            content: ''
+            transform: translate(-50%, -50%)
+            border-radius: 50%
+            background: rgba(#FFFFFF, .3)

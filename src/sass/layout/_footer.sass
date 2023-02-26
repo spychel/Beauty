@@ -1,0 +1,49 @@
+@import '../widgets/_social-media'
+
+.footer
+    background-color: #FFFFFF
+    padding-top: .8rem
+    &__address
+        font-size: 1.4rem
+        @include respond(mobile-m)
+            grid-column: 1 / -1
+    &__first-line
+        background-color: #FFFFFF
+        padding: 3.7rem 0
+        border-top: 1px solid $gray
+        &-wrapper
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            text-align: center
+            align-items: center
+            gap: 2rem
+            @include respond(laptop-s)
+                grid-template-columns: repeat(2, 1fr)
+                grid-template-rows: repeat(2, 1fr)
+                justify-items: center
+            @include respond(mobile-m)
+                grid-template-columns: repeat(2, 1fr)
+                grid-template-rows: repeat(3, 1fr)
+            @include respond(mobile-ss)
+                grid-template-columns: repeat(1, 1fr)
+                grid-template-rows: repeat(4, 1fr)
+    &__social-media
+        @include respond(mobile-m)
+            grid-column: 1 / -1
+    &__second-line
+        background: $gray
+        &-wrapper
+            padding: 2.5rem 0
+            display: flex
+            justify-content: space-between
+            font-size: 12px
+            font-weight: 400
+            color: #828282
+            @include respond(laptop-m)
+                flex-wrap: wrap
+                gap: 2rem
+                justify-content: center
+            @include respond(tablet)
+                text-align: center
+            & a
+                color: #828282

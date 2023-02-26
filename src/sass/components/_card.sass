@@ -1,0 +1,24 @@
+.card
+    display: flex
+    align-items: center
+    flex-direction: column
+    padding: 2.5rem 3rem
+    text-align: center
+    background-color: #FFFFFF
+    gap: 2rem
+    max-width: 25.5rem
+    width: 100%
+    @include respond(tablet-s)
+        max-width: 26.5rem
+    &__img
+        display: block
+        width: 12.5rem
+        height: 16.6rem
+    &__title
+        color: #333333
+        font-size: 1.4rem
+    &__price
+        letter-spacing: .105rem
+        font-size: 2.1rem
+        font-weight: 500
+        line-height: 2.5rem

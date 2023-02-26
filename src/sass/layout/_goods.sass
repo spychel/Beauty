@@ -1,0 +1,21 @@
+@import '../components/_card'
+ 
+.goods
+    &__wrapper
+        @include respond(laptop-s)
+            text-align: center
+    &__title
+        font-size: 2.4rem
+        font-weight: 700
+        line-height: 2.8rem
+    &__cards-wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        gap: 3rem
+        @include respond(laptop-s)
+            justify-content: center
+        @include respond(tablet)
+            column-gap: 3rem
+        @include respond(tablet-s)
+            column-gap: 11rem
